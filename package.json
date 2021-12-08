@@ -1,0 +1,33 @@
+{
+  "name": "personalized-expense-tracker",
+  "version": "1.0.0",
+  "description": "Backend for personalized expense tracker",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Ishankoradia/personalized-expense-tracker.git"
+  },
+  "author": "Ishan koradia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ishankoradia/personalized-expense-tracker/issues"
+  },
+  "homepage": "https://github.com/Ishankoradia/personalized-expense-tracker#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.15",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  }
+}
