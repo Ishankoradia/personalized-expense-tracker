@@ -22,10 +22,6 @@ if(process.env.NODE_ENV == 'development'){
 
 app.use('/api/v1/transactions', transactions);
 
-app.get('/', (res, req) => {
-    res.send("Hello World!!");
-});
-
 if(process.env.NODE_ENV == 'production') {
     app.use(express.static('client/build'));
 
